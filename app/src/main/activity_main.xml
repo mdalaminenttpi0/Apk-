@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1120"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UltraHD YouTube ডাউনলোডার"
+            android:textColor="#F8FAFC"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8K / 4K / 2K সরাসরি লোকাল স্টোরেজে ডাউনলোড ও FFmpeg মার্জ"
+            android:textColor="#94A3B8"
+            android:textSize="13sp"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/urlInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#1E293B"
+            android:hint="এখানে YouTube লিংক পেস্ট করুন..."
+            android:inputType="textUri"
+            android:paddingHorizontal="14dp"
+            android:textColor="#F8FAFC"
+            android:textColorHint="#94A3B8"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="রেজোলিউশন বেছে নিন:"
+            android:textColor="#CBD5E1"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <RadioGroup
+            android:id="@+id/qualityGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp">
+
+            <RadioButton
+                android:id="@+id/radio8k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8K Ultra HD (4320p)"
+                android:textColor="#F8FAFC" />
+
+            <RadioButton
+                android:id="@+id/radio4k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="4K Ultra HD (2160p)"
+                android:textColor="#F8FAFC" />
+
+            <RadioButton
+                android:id="@+id/radio2k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2K Quad HD (1440p)"
+                android:textColor="#F8FAFC" />
+
+            <RadioButton
+                android:id="@+id/radio1080"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full HD (1080p)"
+                android:textColor="#F8FAFC" />
+
+            <RadioButton
+                android:id="@+id/radioAudio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="শুধুমাত্র অডিও (MP3)"
+                android:textColor="#F8FAFC" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="আউটপুট ফরম্যাট:"
+            android:textColor="#CBD5E1"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <RadioGroup
+            android:id="@+id/formatGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="18dp">
+
+            <RadioButton
+                android:id="@+id/radioMkv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="MKV (8K/4K সেরা)"
+                android:textColor="#F8FAFC"
+                android:layout_marginEnd="16dp" />
+
+            <RadioButton
+                android:id="@+id/radioMp4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MP4"
+                android:textColor="#F8FAFC" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/downloadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#EF4444"
+            android:text="ডাউনলোড ও মার্জ শুরু করুন"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="প্রস্তুত হচ্ছে..."
+            android:textColor="#94A3B8"
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>
