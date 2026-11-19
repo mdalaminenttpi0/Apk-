@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.UltraHDDownloader" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#EF4444</item>
+        <item name="colorPrimaryVariant">#DC2626</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:statusBarColor">#0B1120</item>
+    </style>
+</resources>
